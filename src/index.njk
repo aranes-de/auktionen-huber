@@ -1,0 +1,210 @@
+---
+layout: base.njk
+title: "Auktionen Huber – Ihr Spezialist für Industrieverwertung | Gutachten, Verwertungen, Auktionen"
+description: "Auktionen Huber bietet ein ganzheitliches Dienstleistungspaket für Insolvenzverwalter, Rechtsanwälte, Banken, Leasinggesellschaften und Unternehmen – bundesweit, DQS-zertifiziert nach DIN EN ISO 9001:2015."
+bodyClass: "is-home"
+head: |
+  <link rel="preload" as="image" href="/images/cnc-m.webp" media="(max-width: 760px)" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="/images/cnc-1200.webp 1200w, /images/cnc-1800.webp 1800w, /images/cnc-2560.webp 2560w" imagesizes="100vw" media="(min-width: 761px)" fetchpriority="high">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Auktionen Huber",
+    "description": "Gutachten – Verwertungen – Auktionen. Spezialist für Industrieverwertung.",
+    "url": "https://www.auktionen-huber.de/",
+    "image": "https://www.auktionen-huber.de/images/og.jpg",
+    "telephone": "+498914883080",
+    "faxNumber": "+49891488308060",
+    "email": "info@auktionen-huber.de",
+    "founder": { "@type": "Person", "name": "Andreas Huber" },
+    "areaServed": "DE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Leopoldstr. 244",
+      "postalCode": "80807",
+      "addressLocality": "München",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
+---
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title" data-theme="dark">
+  <div class="hero__media" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 760px)" srcset="/images/cnc-m.webp">
+      <img class="hero__img" src="/images/cnc-1800.webp" srcset="/images/cnc-1200.webp 1200w, /images/cnc-1800.webp 1800w, /images/cnc-2560.webp 2560w" sizes="100vw" alt="" width="2560" height="1429" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__spot" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <p class="kicker hero__kicker">
+      <span class="tline" aria-hidden="true"></span>
+      <span class="kicker__words"><span>Gutachten</span><span>Verwertungen</span><span>Auktionen</span></span>
+    </p>
+    <h1 class="hero__title" id="hero-title">
+      <span class="hero__pre">Auktionen Huber –</span>
+      <span class="split">{{ "Ihr Spezialist für Industrieverwertung" | words | safe }}</span>
+    </h1>
+    <div class="hero__actions">
+      <a href="tel:{{ site.phone }}" class="btn btn--gold" data-magnet>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        <span>{{ site.phoneLabel }}</span>
+      </a>
+      <a href="#ueber-uns" class="btn btn--ghost" data-magnet><span>Über uns</span></a>
+    </div>
+  </div>
+
+  <ul class="hero__facts wrap" aria-label="Auf einen Blick">
+    <li><span>Bundesweit</span>Verwertungskonzepte</li>
+    <li><span>DIN EN ISO 9001:2015</span>DQS-zertifiziert</li>
+    <li><span>München</span>Leopoldstr. 244</li>
+  </ul>
+</section>
+
+<!-- ============ ÜBER UNS ============ -->
+<section class="about" id="ueber-uns" aria-labelledby="about-title" data-theme="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no" aria-hidden="true">01</span>
+      <h2 class="label" id="about-title">Über uns</h2>
+      <span class="tline tline--long" data-line aria-hidden="true"></span>
+    </div>
+    <p class="statement" data-words>Auktionen Huber bietet ein ganzheitliches Dienstleistungspaket für Insolvenzverwalter, Rechtsanwälte, Banken, Leasinggesellschaften und Unternehmen. Unsere Verwertungskonzepte sind bundesweit ausgerichtet und garantieren eine effiziente, wertoptimierte Vermarktung. Gleichzeitig stellen wir durch persönliche Ansprechpartner vor Ort eine individuelle Betreuung sicher.</p>
+    <ul class="clients" aria-label="Unsere Auftraggeber">
+      <li data-reveal>Insolvenzverwalter</li>
+      <li data-reveal>Rechtsanwälte</li>
+      <li data-reveal>Banken</li>
+      <li data-reveal>Leasinggesellschaften</li>
+      <li data-reveal>Unternehmen</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ LAUFBAND ============ -->
+<div class="marquee" aria-hidden="true" data-theme="dark">
+  <div class="marquee__track" data-marquee>
+    <span>Gutachten</span><i></i><span>Verwertungen</span><i></i><span>Auktionen</span><i></i>
+    <span>Gutachten</span><i></i><span>Verwertungen</span><i></i><span>Auktionen</span><i></i>
+  </div>
+</div>
+
+<!-- ============ LEISTUNGEN ============ -->
+<section class="services" id="leistungen" aria-labelledby="services-title" data-theme="light">
+  <div class="wrap">
+    <div class="sec-head sec-head--light">
+      <span class="sec-no" aria-hidden="true">02</span>
+      <h2 class="label" id="services-title">Leistungen</h2>
+      <span class="tline tline--long" data-line aria-hidden="true"></span>
+    </div>
+
+    <div class="stack" data-stack>
+      <article class="card" data-card>
+        <div class="card__media">
+          <img src="/images/werkstatt-1200.webp" srcset="/images/werkstatt-640.webp 640w, /images/werkstatt-960.webp 960w, /images/werkstatt-1200.webp 1200w, /images/werkstatt-1800.webp 1800w" sizes="(max-width: 860px) calc(100vw - 40px), 45vw" alt="Werkstatt- und Produktionshalle mit Industrieöfen, Montagevorrichtungen und Lagerregalen" width="1800" height="1005" loading="lazy" decoding="async">
+        </div>
+        <div class="card__body">
+          <span class="card__no" aria-hidden="true">01</span>
+          <h3>Detaillierte Bestandsaufnahme und Bewertung</h3>
+          <p>Unsere Prozesse beginnen mit einer umfassenden, EDV-gestützten Erfassung sämtlicher Vermögenswerte. Dabei wird jede Position präzise dokumentiert, Fremdrechte werden gesondert ausgewiesen und in unseren Gutachten berücksichtigt. Zur Wertbestimmung führen wir eine Bewertung nach Zerschlagungswert sowie Fortführungswert durch, um eine fundierte Entscheidungsgrundlage für alle Beteiligten zu schaffen.</p>
+        </div>
+      </article>
+
+      <article class="card" data-card>
+        <div class="card__media">
+          <img src="/images/traktoren-1200.webp" srcset="/images/traktoren-640.webp 640w, /images/traktoren-960.webp 960w, /images/traktoren-1200.webp 1200w, /images/traktoren-1800.webp 1800w" sizes="(max-width: 860px) calc(100vw - 40px), 45vw" alt="Mehrere Traktoren verschiedener Hersteller vor einem Hof" width="1800" height="1005" loading="lazy" decoding="async">
+        </div>
+        <div class="card__body">
+          <span class="card__no" aria-hidden="true">02</span>
+          <h3>Internationale Vermarktung und Industrieauktionen</h3>
+          <p>Ob Insolvenz, Betriebsaufgabe oder Sanierung – wir übernehmen die Verwertung von Betriebs- und Geschäftsausstattung und bieten hierfür verschiedene Verkaufsstrategien:</p>
+          <ul class="checks">
+            <li>Internationale Industrieauktionen für maximale Reichweite</li>
+            <li>Komplett- oder Einzelverkäufe, abgestimmt auf Marktbedingungen</li>
+            <li>Zugang zu einem weitreichenden internationalen Käufernetzwerk</li>
+          </ul>
+          <p>Durch unsere langjährige Markterfahrung und internationale Kontakte erzielen wir bestmögliche Verkaufserlöse für unsere Auftraggeber.</p>
+        </div>
+      </article>
+
+      <article class="card" data-card>
+        <div class="card__media">
+          <img src="/images/cnc-detail-1200.webp" srcset="/images/cnc-detail-640.webp 640w, /images/cnc-detail-960.webp 960w, /images/cnc-detail-1200.webp 1200w" sizes="(max-width: 860px) calc(100vw - 40px), 45vw" alt="Reihe moderner CNC-Bearbeitungszentren in einer hellen Industriehalle" width="1200" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="card__body">
+          <span class="card__no" aria-hidden="true">03</span>
+          <h3>Reibungslose Abwicklung und Full-Service-Leistungen</h3>
+          <p>Neben der Verwertung übernehmen wir auch sämtliche organisatorischen und logistischen Prozesse, darunter:</p>
+          <ul class="checks">
+            <li>Internationale digitale und analoge Vermarktung der Objekte</li>
+            <li>Forderungsmanagement und Zahlungsabwicklung</li>
+            <li>Koordination der Abholung und Logistik</li>
+          </ul>
+          <p>Unser strukturiertes Vorgehen ermöglicht eine schnelle und transparente Umsetzung – effizient, zuverlässig und professionell.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUALITÄT ============ -->
+<section class="quality" id="qualitaet" aria-labelledby="quality-title" data-theme="dark">
+  <div class="wrap quality__grid">
+    <div class="seal" aria-hidden="true">
+      <svg viewBox="0 0 240 240" class="seal__ring">
+        <defs><path id="seal-circle" d="M120,120 m-96,0 a96,96 0 1,1 192,0 a96,96 0 1,1 -192,0"/></defs>
+        <text><textPath href="#seal-circle" textLength="600" lengthAdjust="spacing">DIN EN ISO 9001:2015 · DQS-ZERTIFIZIERT · QUALITÄT ·</textPath></text>
+      </svg>
+      <span class="seal__core"><b>ISO</b><i>9001</i></span>
+    </div>
+    <div class="quality__text">
+      <div class="sec-head">
+        <span class="sec-no" aria-hidden="true">03</span>
+        <p class="label">Qualität</p>
+        <span class="tline tline--long" data-line aria-hidden="true"></span>
+      </div>
+      <h2 class="h-lg" id="quality-title" data-reveal>Zertifizierte Qualität nach <em>DIN EN ISO 9001:2015</em></h2>
+      <p class="quality__p" data-reveal>Qualität und Prozesssicherheit stehen bei uns an erster Stelle. Unsere Abläufe unterliegen regelmäßigen Prüfungen durch unabhängige Zertifizierungsstellen. Auktionen Huber ist DQS-zertifiziert nach DIN EN ISO 9001:2015 und verpflichtet sich zur kontinuierlichen Verbesserung aller Dienstleistungen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="contact" id="kontakt" aria-labelledby="contact-title" data-theme="light">
+  <div class="wrap">
+    <div class="sec-head sec-head--light">
+      <span class="sec-no" aria-hidden="true">04</span>
+      <h2 class="label" id="contact-title">Kontakt</h2>
+      <span class="tline tline--long" data-line aria-hidden="true"></span>
+    </div>
+    <div class="contact__grid">
+      <div data-reveal>
+        <p class="contact__big">Sprechen Sie <em>uns an.</em></p>
+        <p class="contact__lead">Ob Bewertung, Verwertung oder Industrieauktion – wir beraten Sie persönlich und finden gemeinsam die passende Lösung für Ihr Vorhaben. Rufen Sie uns an oder schreiben Sie uns eine E-Mail.</p>
+        <div class="contact__actions">
+          <a href="tel:{{ site.phone }}" class="btn btn--navy" data-magnet>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            <span>Anrufen</span>
+          </a>
+          <a href="mailto:{{ site.email }}" class="btn btn--line" data-magnet>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.6-8-5.6zM5.6 7l6.4 4.5L18.4 7H5.6z"/></svg>
+            <span>E-Mail schreiben</span>
+          </a>
+        </div>
+      </div>
+      <address class="contact__card" data-reveal>
+        <p class="contact__name">Auktionen Huber</p>
+        <p>Andreas Huber<br>Leopoldstr. 244<br>80807 München</p>
+        <dl>
+          <div><dt>Tel</dt><dd><a href="tel:{{ site.phone }}">{{ site.phoneLabel }}</a></dd></div>
+          <div><dt>Fax</dt><dd>{{ site.fax }}</dd></div>
+          <div><dt>E-Mail</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+        </dl>
+      </address>
+    </div>
+  </div>
+</section>
