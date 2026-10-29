@@ -38,11 +38,6 @@
   const hero = $(".hero");
   if (hero) {
     new IntersectionObserver(([en]) => hdr.classList.toggle("is-solid", !en.isIntersecting), { rootMargin: "-100px 0px 0px 0px" }).observe(hero);
-    // Header übernimmt das Farbschema des Bereichs direkt darunter
-    const themeIO = new IntersectionObserver((entries) => entries.forEach((en) => {
-      if (en.isIntersecting) hdr.classList.toggle("is-light", en.target.dataset.theme === "light");
-    }), { rootMargin: "-40px 0px -95% 0px" });
-    $$("[data-theme]").forEach((s) => themeIO.observe(s));
   }
 
   /* ---------- Mobile-Menü ---------- */
@@ -79,7 +74,7 @@
 
   /* ---------- Statement: Wörter hellen mit dem Scrollen auf ---------- */
   const statement = $("[data-words]");
-  const stWords = statement ? splitWords(statement, ["ganzheitliches", "bundesweit", "wertoptimierte", "persönliche"]) : [];
+  const stWords = statement ? splitWords(statement, ["Bewertung", "Verwertung"]) : [];
 
   /* ---------- Scroll-gekoppelte Effekte (ein gemeinsamer rAF-Loop) ---------- */
   const track = $("[data-marquee]");

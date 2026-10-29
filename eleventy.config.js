@@ -40,9 +40,6 @@ module.exports = function (eleventyConfig) {
             .join(" ")
     );
 
-    // {% inlineFile "src/_includes/logo-symbol.svg" %}
-    eleventyConfig.addShortcode("inlineFile", (relPath) => read(relPath));
-
     return {
         dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
     };

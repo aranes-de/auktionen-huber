@@ -7,7 +7,7 @@
   <meta name="description" content="{{ description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
-  <meta name="theme-color" content="#090c1c">
+  <meta name="theme-color" content="#fafbfd">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="{{ title }}">
@@ -19,14 +19,12 @@
 </head>
 <body class="{{ bodyClass }}">
 
-<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">{% inlineFile "src/_includes/logo-symbol.svg" %}</svg>
-
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
 <header class="hdr" data-hdr>
   <div class="hdr__in">
-    <a href="/" class="hdr__logo" aria-label="Auktionen Huber – Startseite">
-      <svg viewBox="0 0 250.42 50.5" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
+    <a href="/" class="hdr__logo">
+      <img src="/images/logo.png" alt="Auktionen Huber – Startseite" width="247" height="53">
     </a>
     <nav class="hdr__nav" aria-label="Hauptnavigation">
       <a href="/#ueber-uns">Über uns</a>
@@ -35,7 +33,7 @@
       <a href="/#kontakt">Kontakt</a>
     </nav>
     {% set suffix = "" %}{% include "lang.njk" %}
-    <a href="tel:{{ site.phone }}" class="btn btn--gold btn--sm hdr__tel" aria-label="Anrufen: {{ site.phoneLabel }}">
+    <a href="tel:{{ site.phone }}" class="btn btn--primary btn--sm hdr__tel" aria-label="Anrufen: {{ site.phoneLabel }}">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
       <span>{{ site.phoneLabel }}</span>
     </a>
@@ -64,8 +62,8 @@
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__top">
-      <a href="/" class="ftr__logo" aria-label="Auktionen Huber – Startseite">
-        <svg viewBox="0 0 250.42 50.5" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
+      <a href="/" class="ftr__logo">
+        <img src="/images/logo.png" alt="Auktionen Huber – Startseite" width="247" height="53" loading="lazy">
       </a>
       <p class="ftr__claim">Gutachten – Verwertungen – Auktionen</p>
     </div>
