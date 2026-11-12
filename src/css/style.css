@@ -146,11 +146,14 @@ address { font-style: normal; }
 .hero { position: relative; isolation: isolate; overflow: hidden; min-height: max(660px, 100svh); display: flex; flex-direction: column; justify-content: flex-end; padding: 170px 0 0; color: var(--ivory); background: var(--ink); }
 .hero__media, .hero__shade, .hero__spot { position: absolute; inset: 0; z-index: -1; }
 .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; animation: heroIn 2.6s var(--ease) both; }
-/* Hero-Slider: zwei Bilder, sanfte Überblendung (reine CSS-Animation, 16s-Zyklus) */
+/* Hero-Slider: drei Fotos, sanfte Überblendung (reine CSS-Animation, 18s-Zyklus, je 6s) */
 .hero__slide { position: absolute; inset: 0; }
-.hero__slide--kipper { opacity: 0; animation: heroFade 16s ease-in-out 5s infinite; }
-.hero__slide--kipper .hero__img { animation: none; transform: scale(1.02); filter: saturate(.85); }
-@keyframes heroFade { 0%, 40% { opacity: 0; } 50%, 90% { opacity: 1; } 100% { opacity: 0; } }
+.hero__slide--2, .hero__slide--3 { opacity: 0; }
+.hero__slide--2 { animation: heroFade2 18s ease-in-out 6s infinite; }
+.hero__slide--3 { animation: heroFade3 18s ease-in-out 12s infinite; }
+.hero__slide--2 .hero__img, .hero__slide--3 .hero__img { animation: none; transform: scale(1.02); filter: saturate(.85); }
+@keyframes heroFade2 { 0% { opacity: 0; } 7%, 40% { opacity: 1; } 47%, 100% { opacity: 0; } }
+@keyframes heroFade3 { 0% { opacity: 0; } 7%, 33% { opacity: 1; } 40%, 100% { opacity: 0; } }
 @keyframes heroIn { from { transform: scale(1.14); filter: saturate(.4); } to { transform: scale(1.02); filter: saturate(.85); } }
 .hero__shade {
   background:
@@ -212,13 +215,13 @@ address { font-style: normal; }
 .stack { display: grid; gap: clamp(28px, 4vw, 48px); }
 .card {
   position: sticky; top: calc(110px + var(--n, 0) * 26px);
-  display: grid; grid-template-columns: 1fr 1fr; min-height: min(78vh, 660px);
+  display: grid; grid-template-columns: 1.3fr 1fr; min-height: min(78vh, 660px);
   background: var(--paper); border: 1px solid var(--line); border-radius: 28px; overflow: hidden;
   box-shadow: 0 -20px 60px -40px rgba(9,12,28,.35);
   transform-origin: 50% 0; transform: scale(var(--s, 1)); filter: brightness(var(--b, 1));
 }
 .card__media { position: relative; overflow: hidden; }
-.card__media img { position: absolute; inset: 0; width: 100%; height: 120%; object-fit: cover; transform: translateY(var(--py, -8%)); }
+.card__media img { position: absolute; inset: 0; width: 100%; height: 106%; object-fit: cover; transform: translateY(var(--py, -3%)); }
 .card__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,12,28,0) 60%, rgba(9,12,28,.12)); }
 .card__body { padding: clamp(32px, 4.5vw, 72px); display: flex; flex-direction: column; justify-content: center; gap: 20px; }
 .card__no { font-size: clamp(54px, 6vw, 96px); font-weight: 200; font-stretch: 125%; line-height: .8; letter-spacing: -.04em; color: var(--blue-ink); }

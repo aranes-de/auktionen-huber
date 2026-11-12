@@ -107,7 +107,7 @@
         card.style.setProperty("--b", (1 - p * 0.35).toFixed(4));
         const img = $(".card__media img", card);
         const q = clamp((vh - r.top) / (vh + r.height));
-        img.style.setProperty("--py", `${(-16 + q * 16).toFixed(2)}%`);
+        img.style.setProperty("--py", `${(-6 + q * 6).toFixed(2)}%`);
       });
     }
   };
